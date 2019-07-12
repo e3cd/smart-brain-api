@@ -19,6 +19,7 @@
     "pg": "^7.4.0"
   },
   "devDependencies": {
+    "morgan": "^1.9.1",
     "nodemon": "^1.12.7"
   },
   "description": ""
