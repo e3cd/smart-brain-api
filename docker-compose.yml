@@ -10,6 +10,7 @@ services:
     environment: 
       # connecting to pg directly thru terminal shortcut
       POSTGRES_URI: postgres://sally:secret@postgres:5432/smart-brain-docker
+      REDIS_URI: redis://redis:6379
     ports: 
       - "3000:3000"
     volumes: 
@@ -27,3 +28,10 @@ services:
     # change port mapping from original pg smartbrain
     ports:
       - "1234:5432"
+
+  # Redis
+  redis:
+    image: redis
+    container_name: redis
+    ports: 
+      - "6379:6379"
